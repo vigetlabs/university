@@ -1,0 +1,26 @@
+{
+  "name": "university",
+  "version": "0.0.1",
+  "description": "EF - Viget HapiJS University",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test":  "test",
+    "start": "node lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efatsi/university.git"
+  },
+  "author": "Eli Fatsi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/efatsi/university/issues"
+  },
+  "homepage": "https://github.com/efatsi/university#readme",
+  "dependencies": {
+    "hapi": "11.1.4"
+  }
+}
