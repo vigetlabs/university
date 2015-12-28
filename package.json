@@ -7,8 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test":  "test",
-    "start": "node lib/index.js"
+    "start": "node lib/index.js",
+    "test": "istanbul cover _mocha",
+    "cov": "npm test; open coverage/lcov-report/index.html"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,9 @@
   "homepage": "https://github.com/efatsi/university#readme",
   "dependencies": {
     "hapi": "11.1.4"
+  },
+  "devDependencies": {
+    "istanbul": "0.4.1",
+    "mocha": "2.3.4"
   }
 }
