@@ -25,6 +25,7 @@
     "hapi": "11.1.4"
   },
   "devDependencies": {
+    "inject-then": "2.0.3",
     "istanbul": "0.4.1",
     "mocha": "2.3.4"
   }
