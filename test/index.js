@@ -1,7 +1,8 @@
-import assert     from 'assert'
-import superagent from 'superagent'
+import assert      from 'assert'
+import superagent  from 'superagent'
+import startServer from '../lib/server'
 
-require('../lib/index')
+startServer(8001)
 
 describe('/version', () => {
   it('returns the current version', (done) => {
