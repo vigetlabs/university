@@ -11,7 +11,8 @@
   },
   "scripts": {
     "start": "node .",
-    "test": ""
+    "test": "lab -t 100",
+    "test-cov-html": "lab -r html -o coverage.html"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,9 @@
   "homepage": "https://github.com/vigetlabs/university#readme",
   "dependencies": {
     "hapi": "^11.1.4"
+  },
+  "devDependencies": {
+    "code": "^2.1.0",
+    "lab": "^8.0.1"
   }
 }
