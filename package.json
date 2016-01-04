@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "nodemon lib/index.js --exec babel-node",
-    "test": "babel-node ./node_modules/istanbul/lib/cli cover _mocha && open coverage/lcov-report/index.html"
+    "test": "babel-node ./node_modules/mocha/bin/_mocha",
+    "coverage": "babel-node ./node_modules/istanbul/lib/cli cover _mocha && open coverage/lcov-report/index.html"
   },
   "dependencies": {
     "babel-cli": "6.3.17",
