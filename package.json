@@ -1,0 +1,33 @@
+{
+  "name": "university",
+  "version": "0.0.1",
+  "description": "This is the Viget internal workshop repo for the excellent HapiJS University workshop. This will differ slightly than the original.",
+  "main": "index.js",
+  "engines": {
+    "node": "5.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "hapi": "12.0.0"
+  },
+  "devDependencies": {
+    "lab": "8.0.1"
+  },
+  "scripts": {
+    "start": "node lib",
+    "test": "lab -t 100",
+    "test-cov-html": "lab -r html -o coverage.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solomonhawk/university.git"
+  },
+  "author": "Solomon Hawk <solomon.hawk@viget.com> (http://viget.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solomonhawk/university/issues"
+  },
+  "homepage": "https://github.com/solomonhawk/university#readme"
+}
