@@ -1,0 +1,34 @@
+{
+  "name": "viget-university",
+  "version": "0.1.0",
+  "description": "This is the Viget internal workshop repo for the excellent HapiJS University workshop. This will differ slightly than the original.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "hapi": "12.0.0"
+  },
+  "devDependencies": {
+    "istanbul": "0.4.1",
+    "mocha": "2.3.4",
+    "standard": "5.4.1"
+  },
+  "scripts": {
+    "start": "node lib/index",
+    "lint": "standard lib/**/*.js",
+    "test": "mocha --recursive",
+    "test:watch": "mocha -R min -w --recursive",
+    "test:cov": "istanbul cover _mocha -- -R dot --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhunzaker/university.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nhunzaker/university/issues"
+  },
+  "homepage": "https://github.com/nhunzaker/university#readme"
+}
