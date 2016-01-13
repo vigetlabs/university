@@ -11,7 +11,7 @@ server.route({
   method: 'GET',
   path:'/version',
   handler: function (request, reply) {
-    return reply(Package.version);
+    return reply({ "version": Package.version });
   }
 });
 

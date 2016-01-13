@@ -16,7 +16,7 @@ describe('Retrieving the version number', () => {
       var result      = response.result;
       var packageVersion  = Package.version
 
-      expect(result).to.equal(packageVersion);
+      expect(result.version).to.equal(packageVersion);
 
       done();
     });
