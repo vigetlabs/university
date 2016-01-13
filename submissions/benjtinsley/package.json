@@ -1,0 +1,28 @@
+{
+  "name": "viget-university",
+  "version": "0.1.0",
+  "description": "This is the Viget internal workshop repo for the excellent HapiJS University workshop. This will differ slightly than the original.",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index",
+    "lint": "standard lib/**/*.js",
+    "test": "lab"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjtinsley/university.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjtinsley/university/issues"
+  },
+  "homepage": "https://github.com/benjtinsley/university#readme",
+  "devDependencies": {
+    "code": "^2.1.0",
+    "lab": "^8.0.2"
+  },
+  "dependencies": {
+    "hapi": "^12.1.0"
+  }
+}
