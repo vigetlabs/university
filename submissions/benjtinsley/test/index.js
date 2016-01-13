@@ -11,12 +11,8 @@ var expect   = Code.expect;
 describe('Retrieving the version number', () => {
 
   it('returns the version of the project at /version', (done) => {
-    var options = {
-      method: "GET",
-      url:    "/version"
-    };
 
-    Server.inject(options, (response) => {
+    Server.inject('/version', (response) => {
       var result      = response.result;
       var packageVersion  = Package.version
 
