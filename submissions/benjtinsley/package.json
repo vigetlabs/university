@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node lib/index",
     "lint": "standard lib/**/*.js",
-    "test": "lab"
+    "test": "lab -c -r html -o coverage.html"
   },
   "repository": {
     "type": "git",
