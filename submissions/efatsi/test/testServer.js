@@ -1,12 +1,9 @@
-var Hapi   = require("hapi")
-var routes = require("../lib/routes")
+var serverStarter = require("../lib/server")
 
-var server = new Hapi.Server()
-
-server.connection({ host: "test" })
-server.route(routes)
-server.register(require("inject-then"), function (err) {
-  if (err) throw err
+var server = serverStarter.init(8008, function(s) {
+  s.register(require("inject-then"), function(err) {
+    if (err) throw err
+  })
 })
 
 module.exports = server
